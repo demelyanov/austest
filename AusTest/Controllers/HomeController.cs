@@ -51,5 +51,13 @@ namespace AusTest.Controllers
             return Json(new { Success = true });
         }
 
+        [HttpPost]
+        public IActionResult _item(int id) {
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var item = _requirementsService.GetById(id, Convert.ToInt32(userId));
+            if (null == item)
+                return Json(new { Success = false, Error = "Requirement not found" });
+            return Json(new { Success = true, data = item });
+        }
     }
 }
