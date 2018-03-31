@@ -1,0 +1,14 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "3.3.1",
+    "jquery-validation": "*",
+    "jquery-validation-unobtrusive": "*",
+    "font-awesome": "4.7.0",
+    "datatables.net": "*",
+    "datatables.net-bs": "^1.10.16",
+    "bootbox.js": "*"
+  }
+}
