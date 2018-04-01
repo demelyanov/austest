@@ -75,6 +75,4 @@ _[Ss]cripts
 *.dot[Cc]over
 /.vs
 node_modules/
-dist/
-/dist/
 .vscode/
